@@ -19,6 +19,7 @@ public class S_5_1475 {
             int digit = num % 10;
             //!arr 사용 x arr 사용 o
             //사용하면 true 사용하지 않으면 false 처리해서 로직 처리
+            //이 로직대로면 111222333 3세트필요하지만 앞부터 순서대로돌아서 7세트필요해짐
             if (!arr[digit]) {
                 arr[digit] = true;
             } else if (arr[6] && !arr[9] && digit == 6) {
