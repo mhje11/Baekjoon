@@ -2,6 +2,7 @@ package S3;
 
 import java.io.*;
 import java.util.StringTokenizer;
+//Math
 
 public class S_3_1929 {
     public static void main(String[] args) throws IOException {

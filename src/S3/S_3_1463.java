@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//fail, dp
+//fail, dp 쉬운거 먼저 풀어보면서 유형익히기
 
 public class S_3_1463 {
     public static void main(String[] args) throws IOException {
