@@ -1,6 +1,7 @@
 package S5;
 
 import java.util.Scanner;
+//implementation, String
 
 public class S_5_1316 {
     public static void main(String[] args) {

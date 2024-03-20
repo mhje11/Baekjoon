@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
-//이진검색
+//BinarySearch
 
 public class S_5_10815 {
     public static void main(String[] args) throws IOException {
@@ -28,23 +28,24 @@ public class S_5_10815 {
                 sb.append("0 ");
             }
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
 
     }
 
     public static boolean binarySearch(int[] cards, int target) {
-        int left = 0;
-        int right = cards.length - 1;
+        int low = 0;
+        int high = cards.length - 1;
 
-        while (left <= right) {
-            int mid = (left + right) / 2;
+        while (low <= high) {
+            int mid = (low + high) / 2;
 
-            if (cards[mid] == target)
+            if (cards[mid] == target) {
                 return true;
-            else if (cards[mid] < target)
-                left = mid + 1;
-                else
-                    right = mid -1;
+            } else if (cards[mid] < target) {
+                low = mid + 1;
+            } else {
+                high = mid -1;
+            }
 
         }
         return false;

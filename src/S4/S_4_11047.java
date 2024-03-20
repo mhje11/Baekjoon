@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
+//Greedy
 
 public class S_4_11047 {
     public static void main(String[] args) throws IOException {
@@ -13,7 +14,7 @@ public class S_4_11047 {
         int N = Integer.parseInt(st.nextToken());
         int K = Integer.parseInt(st.nextToken());
         int count = 0;
-        int arr[] = new int[N];
+        int[] arr = new int[N];
         for (int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(br.readLine());
         }

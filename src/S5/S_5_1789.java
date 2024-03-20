@@ -3,6 +3,7 @@ package S5;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+//Greedy
 
 public class S_5_1789 {
     public static void main(String[] args) throws IOException {
