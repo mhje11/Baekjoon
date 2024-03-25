@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-//bruteForce fail
+//bruteForce, fail
 public class S_4_1018 {
     public static boolean[][] arr;
     public static int min = 64;
