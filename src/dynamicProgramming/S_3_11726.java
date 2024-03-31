@@ -12,7 +12,6 @@ public class S_3_11726 {
         if (n == 0 || n == 1 || n == 2) {
             System.out.println(n);
         } else {
-
             dp[0] = 0;
             dp[1] = 1;
             dp[2] = 2;
