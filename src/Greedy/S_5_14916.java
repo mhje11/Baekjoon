@@ -9,10 +9,9 @@ public class S_5_14916 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
         int count = 0;
-        int temp = 0;
         while (true) {
             if (n % 5 == 0) {
-                count += n/5;
+                count += n / 5;
                 System.out.println(count);
             break;
             } else {
