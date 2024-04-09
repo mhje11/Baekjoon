@@ -12,7 +12,6 @@ public class S_4_18258 {
     public static int rear = -1;
     public static int currentSize = 0;
     public static void main(String[] args) throws IOException {
-
         int N = Integer.parseInt(br.readLine());
         StringTokenizer st;
         queue = new int[N];
@@ -39,9 +38,7 @@ public class S_4_18258 {
                     break;
             }
         }
-        System.out.println(sb.toString().trim());
-
-
+        System.out.println(sb);
     }
 
     public static void push(int X) {

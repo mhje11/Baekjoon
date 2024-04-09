@@ -22,7 +22,6 @@ public class S_3_9095 {
             }
             sb.append(dp[n]).append('\n');
             T--;
-
         }
         System.out.println(sb);
     }
