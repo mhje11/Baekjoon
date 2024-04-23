@@ -72,6 +72,7 @@ public class S_4_2578 {
             }
         }
         // 대각선 체크
+        //왼 -> 오
         boolean bingo = true;
         for (int i = 0; i < 5; i++) {
             if (arr2[i][i] == 0) {
@@ -83,6 +84,7 @@ public class S_4_2578 {
             bingoCount++;
         }
         bingo = true;
+        //오 -> 왼
         for (int i = 0; i < 5; i++) {
             if (arr2[i][4 - i] == 0) {
                 bingo = false;
