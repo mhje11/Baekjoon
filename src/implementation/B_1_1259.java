@@ -21,15 +21,13 @@ public class B_1_1259 {
 
         }
 
-        System.out.println(sb);
+        System.out.println(sb.toString().trim());
     }
 
 
     public static boolean isPalindrome(String num) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < num.length(); i++) {
-            sb.append(num.charAt(num.length()- i- 1));
-        }
+        sb.append(num).reverse();
         if (num.equals(sb.toString())) {
             return true;
         }
