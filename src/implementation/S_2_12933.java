@@ -1,7 +1,7 @@
 package implementation;
 
 import java.util.Scanner;
-
+//fail
 public class S_2_12933 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
