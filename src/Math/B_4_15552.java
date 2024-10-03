@@ -1,4 +1,4 @@
-package Math;
+package math;
 
 import java.io.*;
 import java.util.StringTokenizer;

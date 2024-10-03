@@ -1,4 +1,4 @@
-package DFS_BFS;
+package dfs_bfs;
 
 public class BFSEx {
     //보통 큐 사용

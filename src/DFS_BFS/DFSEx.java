@@ -1,6 +1,4 @@
-package DFS_BFS;
-
-import org.w3c.dom.Node;
+package dfs_bfs;
 
 import java.util.ArrayList;
 

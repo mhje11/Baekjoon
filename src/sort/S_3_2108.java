@@ -3,9 +3,9 @@ package sort;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
-
-
+import java.util.Collections;
 
 
 public class S_3_2108 {
@@ -37,48 +37,37 @@ public class S_3_2108 {
     }
 
     public static int mode(int[] arr) {
-        // Find the maximum and minimum values in the array
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
+        int[] frequency = new int[8001];
         for (int i : arr) {
-            if (i > max) {
-                max = i;
-            }
-            if (i < min) {
-                min = i;
-            }
+            frequency[i + 4000]++;
         }
 
-        // Determine the size of the modeCount array
-        int range = max - min + 1;
-        int[] modeCount = new int[range];
-
-        // Count the occurrences of each element in the array
-        for (int i : arr) {
-            modeCount[i - min]++;
-        }
-
-        // Find the mode value
-        int modeIndex = 0;
-        int modeValue = 0;
-        for (int i = 0; i < range; i++) {
-            if (modeCount[i] > modeValue) {
-                modeValue = modeCount[i];
-                modeIndex = i;
+        int maxFreq = 0;
+        ArrayList<Integer> modeList = new ArrayList<>();
+        for (int i = 0; i < 8001; i++) {
+            if (frequency[i] > maxFreq) {
+                maxFreq = frequency[i];
+                modeList.clear();
+                modeList.add(i - 4000);
+            } else if (frequency[i] == maxFreq) {
+                modeList.add(i - 4000);
             }
         }
 
-        // Adjust the mode index to get the actual mode value
-        int mode = modeIndex + min;
+        if (modeList.size() > 1) {
+            Collections.sort(modeList);
+            return modeList.get(1);
+        } else {
+            return modeList.get(0);
+        }
 
-        return mode;
     }
     public static int range(int[] arr) {
         if (arr.length == 1) {
             return 0;
         } else {
-            int max = 0;
-            int min = 0;
+            int max = Integer.MIN_VALUE;
+            int min = Integer.MAX_VALUE;
             for (int i : arr) {
                 if (max < i) {
                     max = i;
